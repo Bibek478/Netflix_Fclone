@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("Assets/img/IN-en-20240603-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-position: center center;
+    background-size: max(1200px,100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+}
+.main .box{
+    height: 644px;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 80vw;
+    margin: auto;
+    align-items: center;
+    height: 100px;
+}
+nav img{
+    color: red;
+    height: 160px;
+    width: 160px;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;   
+}
+.hero{
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap:23px;
+    padding:0 30px;
+}
+.hero> :nth-child(1){
+    font-weight: bolder;
+    font-size: 55px;
+    text-align: center;
+}
+.hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+}
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+}
+.separation{
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+}
+.btn{
+    padding:3px 8px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-red{    
+    background-color: red;
+    color: white;
+    padding: 15px 30px;
+    font-size: 25px;
+    border-radius: 6px;
+}
+.btn-red-sm{    
+    background-color: red;
+    color: white;
+}
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.main input{
+    padding: 20px 120px 15px 15px;
+    color: white;
+    font-size: 18px;
+    border: 1px solid rgba(246, 238, 238, 0.5);
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+}
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+.tv{
+    position: relative;
+}
+.tv img{
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+.tv video{
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 555px;
+}
+section.first>div{
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+section.first > div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+}
+section.first > div :nth-child(2){
+    font-size: 24px;
+}
+.faq h2{
+    text-align: center;
+    font-size: 48px;
+}
+.faq{
+    background: black;
+    color: white;
+    padding: 34px;
+}
+.faq-box:hover{
+    background-color: #414141;
+    color: white;
+}
+.faq-box svg{
+    filter: invert(1);
+}
+.faq-box{
+    transition: all 0.5s ease-out;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    background-color:#2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 34px;
+}
+footer .questions{
+    padding: 34px 0;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+footer a{
+    color: white;
+    font-size: 14px;
+}
+@media screen and (max-width: 1300px) {
+    nav{
+        max-width: 90vw;
+    }
+    .first{
+        flex-wrap: wrap;
+    }
+    .tv img{
+        width: 305px;
+    }
+    .tv video{
+        width: 305px;
+    }
+    .hero> :nth-child(1){
+        font-size: 32px;
+    }
+    .hero> :nth-child(2){
+        font-size: 18px;
+    }
+    .hero> :nth-child(3){
+        font-size: 18px;
+    }
+    .hero-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    .faq h2{
+        font-size: 32px;
+    }
+    footer{
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+    .footer-item{
+        align-items: center;
+    }
+}
